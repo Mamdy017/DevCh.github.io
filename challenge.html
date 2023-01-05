@@ -185,197 +185,306 @@
                     <div class="row g-4">
                         <div class="col-sm-6 col-xl-3">
                             <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
-                                <i class="fa fa-chart-line fa-3x "></i>
+                                <i class='bx bxs-trophy fa-3x'></i>
                                 <div class="ms-3">
-                                    <p class="mb-2">Today Sale</p>
+                                    <p class="mb-2">Total Challenge</p>
                                     <h6 class="mb-0">$1234</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-xl-3">
                             <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
-                                <i class="fa fa-chart-bar fa-3x "></i>
+                                <i class='bx bxs-trophy fa-3x'></i>
                                 <div class="ms-3">
-                                    <p class="mb-2">Total Sale</p>
+                                    <p class="mb-2">Challenge à venir</p>
                                     <h6 class="mb-0">$1234</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-xl-3">
                             <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
-                                <i class="fa fa-chart-area fa-3x "></i>
+                                <i class='bx bxs-trophy fa-3x' style="color:yellow ;"></i>
                                 <div class="ms-3">
-                                    <p class="mb-2">Today Revenue</p>
+                                    <p class="mb-2">Total encours</p>
                                     <h6 class="mb-0">$1234</h6>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-xl-3">
+                        <div class="col-sm-6 col-xl-3 ">
                             <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
-                                <i class="fa fa-chart-pie fa-3x "></i>
+                                <i class='bx bxs-trophy  fa-3x '></i>
                                 <div class="ms-3">
-                                    <p class="mb-2">Total Revenue</p>
-                                    <h6 class="mb-0">$1234</h6>
+                                    <p class="mb-2">Total Terminer</p>
+                                    <h6 class="mb-0">1234</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid pt-4 px-4">
-                    <div class="row g-4">
+                <div class="container-fluid pt-4 px-4" style="margin-left: -2.5%; width: 105%;">
+                    <button>
+                        <i class='bx bxs-message-square-add fa-1x' style="color: white;"></i>
+                        Ajouter un challenge</button>
+                    <div class="row g-4 py-2">
                         <div class="col-sm-12 col-xl-8">
                             <div class="bg-light text-center rounded p-4">
-                                <div class="d-flex align-items-center justify-content-between mb-4">
-                                    <h6 class="mb-0">Worldwide Sales</h6>
-                                    <a href="">Show All</a>
-                                </div>
+                                <h3>La liste des challenges</h3>
                                 <div class="chart-container">
-                                    <canvas id="MyChart">{{ chart }}</canvas>
+                                    <div class="header_fixed py-2">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>No.</th>
+                                                    <th>Titre </th>
+                                                    <th>Début</th>
+                                                    <th>Fin</th>
+                                                    <th>Catégories</th>
+                                                    <th>Participants</th>
+                                                    <th>Etat</th>
+                                                    <th colspan="2">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>rge</td>
+                                                    <td>cxc</td>
+                                                    <td>Priya</td>
+                                                    <td>Rakhi Gupta</td>
+                                                    <td>344</td>
+                                                    <td>Encours</td>
+                                                    <td><i class='bx bx-edit fa-2x icon'></i></td>
+                                                    <td><i class='bx bxs-trash fa-2x icon'></i></td>
+                                                    <!-- <td><button>Donner points</button></td> -->
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>gdf</td>
+                                                    <td>Anjali</td>
+                                                    <td>cxc</td>
+                                                    <td>Priya</td>
+                                                    <td>Engineering</td>
+                                                    <td>Encours</td>
+                                                    <td><i class='bx bx-edit fa-2x icon'></i></td>
+                                                    <td><i class='bx bxs-trash fa-2x icon'></i></td>
+                                                    <!-- <td><button>Donner points</button></td> -->
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>fdf</td>
+                                                    <td>cxc</td>
+                                                    <td>Priya</td>
+                                                    <td>Vejata Gupta</td>
+                                                    <td>Encours</td>
+                                                    <td>Engineering</td>
+                                                    <td><i class='bx bx-edit fa-2x icon'></i></td>
+                                                    <td><i class='bx bxs-trash fa-2x icon'></i></td>
+                                                    <!-- <td><button>Donner points</button></td> -->
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>fd</td>
+                                                    <td>Shweta</td>
+                                                    <td>cxc</td>
+                                                    <td>Priya</td>
+                                                    <td>Encours</td>
+                                                    <td>Engineering</td>
+                                                    <td><i class='bx bx-edit fa-2x icon'></i></td>
+                                                    <td><i class='bx bxs-trash fa-2x icon'></i></td>
+                                                    <!-- <td><button>Donner points</button></td> -->
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>fd</td>
+                                                    <td>Adarsh</td>
+                                                    <td>cxc</td>
+                                                    <td>Priya</td>
+                                                    <td>Encours</td>
+                                                    <td>Engineering</td>
+                                                    <td><i class='bx bx-edit fa-2x icon'></i></td>
+                                                    <td><i class='bx bxs-trash fa-2x icon'></i></td>
+                                                    <!-- <td><button>Donner points</button></td> -->
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>cxcv</td>
+                                                    <td>Monti</td>
+                                                    <td>Encours</td>
+                                                    <td>Engineering</td>
+                                                    <td>Engineering</td>
+                                                    <td>Encours</td>
+                                                    <td><i class='bx bx-edit fa-2x icon'></i></td>
+                                                    <td><i class='bx bxs-trash fa-2x icon'></i></td>
+                                                    <!-- <td><button>Donner points</button></td> -->
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>vc</td>
+                                                    <td>Arpit</td>
+                                                    <td>cxc</td>
+                                                    <td>Priya</td>
+                                                    <td>Engineering</td>
+                                                    <td>Encours</td>
+                                                    <td><i class='bx bx-edit fa-2x icon'></i></td>
+                                                    <td><i class='bx bxs-trash fa-2x icon'></i></td>
+                                                    <!-- <td><button>Donner points</button></td> -->
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-sm-12 col-xl-4">
                             <div class="bg-light text-center rounded">
-                                <!-- <div class="d-flex align-items-center justify-content-between mb-4">
-                          <h6 class="mb-0">Salse & Revenue</h6>
-                          <a href="">Show All</a>
-                      </div>
-                      <canvas id="salse-revenue"></canvas> -->
                                 <div class="h-100 bg-light rounded p-3">
-                                    <div class="d-flex align-items-center justify-content-between mb-2">
-                                        <h6 class="mb-0">Messages</h6>
-                                        <a href="">Show All</a>
+                                    <h3>La liste des Catégories</h3>
+                                    <div class="header_fixed py-2">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>No.</th>
+                                                    <th>Username</th>
+                                                    <th>Email</th>
+                                                    <th colspan="2">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Rakhi Gupta</td>
+                                                    <td>bbv</td>
+                                                    <td><i class='bx bx-edit fa-2x icon'></i></td>
+                                                    <td><i class='bx bxs-trash fa-2x icon'></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Anjali</td>
+                                                    <td>Encours</td>
+                                                    <td><i class='bx bx-edit fa-2x icon'></i></td>
+                                                    <td><i class='bx bxs-trash fa-2x icon'></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Vejata Gupta</td>
+                                                    <td>Encours</td>
+                                                    <td><i class='bx bx-edit fa-2x icon'></i></td>
+                                                    <td><i class='bx bxs-trash fa-2x icon'></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Shweta</td>
+                                                    <td>Encours</td>
+                                                    <td><i class='bx bx-edit fa-2x icon'></i></td>
+                                                    <td><i class='bx bxs-trash fa-2x icon'></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Adarsh</td>
+                                                    <td>Encours</td>
+                                                    <td><i class='bx bx-edit fa-2x icon'></i></td>
+                                                    <td><i class='bx bxs-trash fa-2x icon'></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Monti</td>
+                                                    <td>Encours</td>
+                                                    <td><i class='bx bx-edit fa-2x icon'></i></td>
+                                                    <td><i class='bx bxs-trash fa-2x icon'></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>Arpit</td>
+                                                    <td>Terminer</td>
+                                                    <td><i class='bx bx-edit fa-2x icon'></i></td>
+                                                    <td><i class='bx bxs-trash fa-2x icon'></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <div class="d-flex align-items-center border-bottom py-3">
-                                        <img class="rounded-circle flex-shrink-0" src="../assets/logo5.jpg" alt=""
-                                            style="width: 40px; height: 40px;">
-                                        <div class="w-100 ms-3">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h6 class="mb-0">Jhon Doe</h6>
-                                                <small>15 minutes ago</small>
-                                            </div>
-                                            <span>Short message goes here...</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center border-bottom py-3">
-                                        <img class="rounded-circle flex-shrink-0" src="../assets/logo5.jpg" alt=""
-                                            style="width: 40px; height: 40px;">
-                                        <div class="w-100 ms-3">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h6 class="mb-0">Jhon Doe</h6>
-                                                <small>15 minutes ago</small>
-                                            </div>
-                                            <span>Short message goes here...</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center border-bottom py-3">
-                                        <img class="rounded-circle flex-shrink-0" src="../assets/logo5.jpg" alt=""
-                                            style="width: 40px; height: 40px;">
-                                        <div class="w-100 ms-3">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h6 class="mb-0">Jhon Doe</h6>
-                                                <small>15 minutes ago</small>
-                                            </div>
-                                            <span>Short message goes here...</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center pt-3">
-                                        <img class="rounded-circle flex-shrink-0" src="../assets/logo5.jpg" alt=""
-                                            style="width: 40px; height: 40px;">
-                                        <div class="w-100 ms-3">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h6 class="mb-0">Jhon Doe</h6>
-                                                <small>15 minutes ago</small>
-                                            </div>
-                                            <span>Short message goes here...</span>
-                                        </div>
-                                    </div>
-
                                 </div>
+
                             </div>
+                        </div>
+                        <div class="header_fixed py-2">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Image</th>
+                                        <th>Nom</th>
+                                        <th>Titre-challenge</th>
+                                        <th>Code</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><img src="../../assets/bg.jpg" alt=""></td>
+                                        <td>Rakhi Gupta</td>
+                                        <td>rakhigupta@gmail.com</td>
+                                        <td>Engineering</td>
+                                        <td><button>Donner points</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><img src="../../assets/bg.jpg" alt=""></td>
+                                        <td>Anjali</td>
+                                        <td>anjali@gmail.com</td>
+                                        <td>Engineering</td>
+                                        <td><button>Donner points</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><img src="../../assets/bg.jpg" alt=""></td>
+                                        <td>Vejata Gupta</td>
+                                        <td>Vejata@gmail.com</td>
+                                        <td>Engineering</td>
+                                        <td><button>Donner points</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td><img src="../../assets/bg.jpg" alt=""></td>
+                                        <td>Shweta</td>
+                                        <td>Shweta@gmail.com</td>
+                                        <td>Engineering</td>
+                                        <td><button>Donner points</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td><img src="../../assets/bg.jpg" alt=""></td>
+                                        <td>Adarsh</td>
+                                        <td>Adarsh@gmail.com</td>
+                                        <td>Engineering</td>
+                                        <td><button>Donner points</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td><img src="../../assets/bg.jpg" alt=""></td>
+                                        <td>Monti</td>
+                                        <td>Monti@gmail.com</td>
+                                        <td>Engineering</td>
+                                        <td><button>Donner points</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td><img src="../../assets/bg.jpg" alt=""></td>
+                                        <td>Arpit</td>
+                                        <td>Arpit@gmail.com</td>
+                                        <td>Engineering</td>
+                                        <td><button>Donner points</button></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-                <div class="header_fixed py-2">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>S No.</th>
-                                <th>Image</th>
-                                <th>Username</th>
-                                <th>Email</th>
-                                <th>Department</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>rge</td>
-                                <td>Rakhi Gupta</td>
-                                <td>rakhigupta@gmail.com</td>
-                                <td>Engineering</td>
-                                <td><button>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>gdf</td>
-                                <td>Anjali</td>
-                                <td>anjali@gmail.com</td>
-                                <td>Engineering</td>
-                                <td><button>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>fdf</td>
-                                <td>Vejata Gupta</td>
-                                <td>Vejata@gmail.com</td>
-                                <td>Engineering</td>
-                                <td><button>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>fd</td>
-                                <td>Shweta</td>
-                                <td>Shweta@gmail.com</td>
-                                <td>Engineering</td>
-                                <td><button>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>fd</td>
-                                <td>Adarsh</td>
-                                <td>Adarsh@gmail.com</td>
-                                <td>Engineering</td>
-                                <td><button>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>cxcv</td>
-                                <td>Monti</td>
-                                <td>Monti@gmail.com</td>
-                                <td>Engineering</td>
-                                <td><button>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>vc</td>
-                                <td>Arpit</td>
-                                <td>Arpit@gmail.com</td>
-                                <td>Engineering</td>
-                                <td><button>View</button></td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>cxc</td>
-                                <td>Priya</td>
-                                <td>priya@gmail.com</td>
-                                <td>Engineering</td>
-                                <td><button>View</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+
+
+
                 <div class="container-fluid pt-4 px-4">
                     <div class="bac rounded-top p-4">
                         <div class="row">
@@ -482,6 +591,72 @@
     /* .sidebar.close{
     width: 88px;
 } */
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .header_fixed {
+        max-height: 100vh;
+        width: 100%;
+        overflow: auto;
+        border: 1px solid #dddddd;
+    }
+
+    .header_fixed thead th {
+        position: sticky;
+        top: 0;
+        background-color: #707070;
+        color: #e6e7e8;
+        font-size: 15px;
+    }
+
+    th,
+    td {
+        border-bottom: 1px solid #dddddd;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    td img {
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        border: 5px solid #e6e7e8;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #edeef1;
+    }
+
+    tr:hover td {
+        color: #44b478;
+        cursor: pointer;
+        background-color: #ffffff;
+    }
+
+    td button {
+        border: none;
+        padding: 7px 20px;
+        border-radius: 20px;
+        background-color: #707070;
+        color: #e6e7e8;
+    }
+
+    button {
+        border: none;
+        padding: 7px;
+        border-radius: 20px;
+        background-color: #707070;
+        color: #e6e7e8;
+    }
+
 
     /* ===== Reusable code - Here ===== */
     .sidebar li {
